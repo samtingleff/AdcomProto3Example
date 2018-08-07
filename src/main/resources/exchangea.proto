@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package com.iabtechlab.adcom.types;
+
+message ExchangeAExtension {
+  string id = 1;
+  string foo = 2;
+}

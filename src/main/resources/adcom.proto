@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package com.iabtechlab.adcom.types;
+import "google/protobuf/any.proto";
+
+enum CategoryTaxonomy {
+  UNKNOWN_CATEGORY_TAXONOMY = 0;
+}
+
+message Ad {
+  string id = 1;
+  repeated string adomain = 2;
+  CategoryTaxonomy cattax = 3;
+  google.protobuf.Any ext = 500;
+}
